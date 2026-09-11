@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Wellvia - The path to better health and wellness. Modern healthcare, diagnostics and preventive care.">
+
+    <title>Wellvia | Healthcare & Wellness</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/wellvia-logo.png">
+</head>
+
+<body>
+
+    <!-- =========================
+         INTRO / OPENING VIDEO
+    ========================== -->
+
+    <div class="intro" id="intro">
+
+        <video id="introVideo" autoplay muted playsinline preload="auto">
+            <source src="assets/opening.mp4" type="video/mp4">
+        </video>
+
+        <div class="intro-overlay"></div>
+
+        <div class="intro-content">
+
+            <div class="mini-logo"><img src="assets/wellvia-logo.png" alt="Wellvia logo"></div>
+
+            <p class="eyebrow">
+                A new way to care
+            </p>
+
+            <h1>Wellvia</h1>
+
+            <p>
+                The path to better health and wellness.
+            </p>
+
+            <button id="skipIntro" class="intro-button">
+                Enter Wellvia
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="intro-progress">
+            <span id="introBar"></span>
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <a href="#home" class="brand">
+
+            <span class="brand-symbol">
+                <img src="assets/wellvia-logo.png" alt="Wellvia logo">
+            </span>
+
+            <span class="brand-name">
+                Wellvia
+            </span>
+
+        </a>
+
+
+        <nav id="nav">
+
+            <a href="#services">Services</a>
+
+            <a href="#doctors">Doctors</a>
+
+            <a href="#packages">Packages</a>
+
+            <a href="#why">Why Wellvia</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <a href="#appointment" class="header-button">
+            Book an Appointment
+        </a>
+
+
+        <button class="menu-button" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-overlay"></div>
+
+
+            <!-- Floating 3D Capsule -->
+
+            <div class="floating-object capsule-object"
+                data-depth="1.2">
+
+                <img src="assets/capsules.jfif" alt="Floating healthcare capsules">
+
+            </div>
+
+
+            <!-- Floating 3D Stethoscope -->
+
+            <div class="floating-object stethoscope-object"
+                data-depth="0.7">
+
+                <img src="assets/stethoscope.jfif"
+                    alt="Medical stethoscope">
+
+            </div>
+
+
+            <!-- Decorative 3D pills -->
+
+            <div class="floating-pill pill-one"></div>
+
+            <div class="floating-pill pill-two"></div>
+
+
+            <!-- Main hero content -->
+
+            <div class="hero-content">
+
+                <div class="hero-symbol">
+
+                    <span></span>
+
+                    <img src="assets/wellvia-logo.png" alt="Wellvia logo">
+
+                    <span></span>
+
+                </div>
+
+
+                <p class="eyebrow">
+                    Trusted Care • Diagnostics • Wellness
+                </p>
+
+
+                <h1>
+                    Wellvia
+                </h1>
+
+
+                <p class="hero-tagline">
+                    The path to better health and wellness.
+                </p>
+
+
+                <p class="hero-description">
+
+                    Thoughtful healthcare, expert consultations and
+                    dependable diagnostics — designed to make every
+                    step of your health journey simpler.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#appointment" class="primary-button">
+
+                        Book an Appointment
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="#services" class="secondary-button">
+
+                        Explore Services
+
+                        <span>↓</span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <strong>24/7</strong>
+
+                        <span>Care Support</span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>12+</strong>
+
+                        <span>Specialties</span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>40+</strong>
+
+                        <span>Diagnostics</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll-text">
+                SCROLL TO EXPLORE
+                <span></span>
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about">
+
+            <div class="section-number">
+                01 — ABOUT WELLVIA
+            </div>
+
+
+            <div class="about-grid">
+
+                <div>
+
+                    <h2>
+                        Healthcare that feels
+                        <em>human.</em>
+                    </h2>
+
+                </div>
+
+
+                <div>
+
+                    <p class="large-text">
+
+                        Wellvia brings consultation, diagnostics
+                        and preventive care together in one calm,
+                        connected experience.
+
+                    </p>
+
+
+                    <p>
+
+                        From a first consultation to follow-up
+                        and wellness screening, our goal is simple:
+                        make quality healthcare easier to access,
+                        easier to understand and easier to continue.
+
+                    </p>
+
+
+                    <a href="#appointment" class="underline-link">
+                        Start your health journey →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SERVICES
+        ========================== -->
+
+        <section class="section services" id="services">
+
+            <div class="section-header">
+
+                <div>
+
+                    <div class="section-number">
+                        02 — DEPARTMENTS & SERVICES
+                    </div>
+
+                    <h2>
+                        Care for every
+                        <em>chapter.</em>
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    From everyday medical care to advanced
+                    diagnostics, explore services built around
+                    real patient needs.
+
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+
+                <article class="service-card featured-card">
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                    <span class="service-icon">
+                        ✦
+                    </span>
+
+                    <h3>
+                        General Medicine
+                    </h3>
+
+                    <p>
+                        Routine consultations, diagnosis,
+                        treatment and ongoing health monitoring.
+                    </p>
+
+                    <a href="#appointment">
+                        Consult →
+                    </a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                    <span class="service-icon">
+                        ♡
+                    </span>
+
+                    <h3>
+                        Cardiology
+                    </h3>
+
+                    <p>
+                        Heart-health consultations, ECG screening
+                        and preventive cardiac care.
+                    </p>
+
+                    <a href="#appointment">
+                        Consult →
+                    </a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+                    <span class="service-icon">
+                        ⌁
+                    </span>
+
+                    <h3>
+                        Orthopedics
+                    </h3>
+
+                    <p>
+                        Bone, joint, muscle and mobility-focused
+                        assessment and care.
+                    </p>
+
+                    <a href="#appointment">
+                        Consult →
+                    </a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        04
+                    </span>
+
+                    <span class="service-icon">
+                        ◌
+                    </span>
+
+                    <h3>
+                        Women's Health
+                    </h3>
+
+                    <p>
+                        Gynecology, preventive screenings and
+                        personalized women's wellness.
+                    </p>
+
+                    <a href="#appointment">
+                        Consult →
+                    </a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        05
+                    </span>
+
+                    <span class="service-icon">
+                        ＋
+                    </span>
+
+                    <h3>
+                        Pediatrics
+                    </h3>
+
+                    <p>
+                        Compassionate healthcare for infants,
+                        children and growing families.
+                    </p>
+
+                    <a href="#appointment">
+                        Consult →
+                    </a>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">
+                        06
+                    </span>
+
+                    <span class="service-icon">
+                        ◈
+                    </span>
+
+                    <h3>
+                        Pathology & Diagnostics
+                    </h3>
+
+                    <p>
+                        Blood, urine and diagnostic testing with
+                        clear and dependable reporting.
+                    </p>
+
+                    <a href="#appointment">
+                        Book a test →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             WELLVIA APPROACH
+        ========================== -->
+
+        <section class="approach">
+
+            <div class="approach-image">
+
+                <img src="assets/stethoscope.jfif"
+                    alt="Wellvia medical care">
+
+            </div>
+
+
+            <div class="approach-content">
+
+                <div class="section-number">
+                    03 — THE WELLVIA APPROACH
+                </div>
+
+
+                <h2>
+
+                    Precise when it matters.
+                    <em>Gentle when it counts.</em>
+
+                </h2>
+
+
+                <p>
+
+                    Modern clinical thinking, dependable
+                    diagnostics and a patient-first experience —
+                    without making healthcare feel complicated.
+
+                </p>
+
+
+                <div class="approach-list">
+
+                    <div>
+
+                        <span>01</span>
+
+                        <div>
+
+                            <strong>
+                                Listen First
+                            </strong>
+
+                            <small>
+                                Understand the person,
+                                not just the symptoms.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>02</span>
+
+                        <div>
+
+                            <strong>
+                                Diagnose Clearly
+                            </strong>
+
+                            <small>
+                                Explain tests and results
+                                in language you can use.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>03</span>
+
+                        <div>
+
+                            <strong>
+                                Care Continuously
+                            </strong>
+
+                            <small>
+                                Support that continues beyond
+                                the appointment.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DOCTORS
+        ========================== -->
+
+        <section class="section doctors" id="doctors">
+
+            <div class="section-header">
+
+                <div>
+
+                    <div class="section-number">
+                        04 — OUR DOCTORS
+                    </div>
+
+                    <h2>
+                        Meet your
+                        <em>care team.</em>
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Experienced specialists focused on
+                    clear communication and personalized care.
+                </p>
+
+            </div>
+
+
+            <div class="doctor-grid">
+
+
+                <article class="doctor-card">
+
+                    <div class="doctor-image doctor-one">
+                        DR
+                    </div>
+
+                    <div class="doctor-info">
+
+                        <span>
+                            GENERAL MEDICINE
+                        </span>
+
+                        <h3>
+                            Dr. Arjun Mehta
+                        </h3>
+
+                        <p>
+                            MBBS, MD • 12 years experience
+                        </p>
+
+                        <a href="#appointment">
+                            Book consultation →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="doctor-card">
+
+                    <div class="doctor-image doctor-two">
+                        DR
+                    </div>
+
+                    <div class="doctor-info">
+
+                        <span>
+                            CARDIOLOGY
+                        </span>
+
+                        <h3>
+                            Dr. Riya Sen
+                        </h3>
+
+                        <p>
+                            MBBS, MD, DM • 10 years experience
+                        </p>
+
+                        <a href="#appointment">
+                            Book consultation →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="doctor-card">
+
+                    <div class="doctor-image doctor-three">
+                        DR
+                    </div>
+
+                    <div class="doctor-info">
+
+                        <span>
+                            ORTHOPEDICS
+                        </span>
+
+                        <h3>
+                            Dr. Kabir Rao
+                        </h3>
+
+                        <p>
+                            MBBS, MS • 9 years experience
+                        </p>
+
+                        <a href="#appointment">
+                            Book consultation →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             HEALTH PACKAGES
+        ========================== -->
+
+        <section class="section packages" id="packages">
+
+            <div class="section-number">
+                05 — HEALTH PACKAGES
+            </div>
+
+
+            <div class="package-intro">
+
+                <h2>
+                    Prevention is a
+                    <em>powerful</em>
+                    form of care.
+                </h2>
+
+
+                <p>
+                    Choose a focused screening plan and understand
+                    your health before small concerns become bigger ones.
+                </p>
+
+            </div>
+
+
+            <div class="package-grid">
+
+
+                <article class="package-card">
+
+                    <span>
+                        ESSENTIAL
+                    </span>
+
+                    <h3>
+                        Wellvia Basic
+                    </h3>
+
+                    <strong>
+                        ₹1,499
+                    </strong>
+
+                    <p>
+                        CBC • Blood Sugar • Lipid Profile
+                        • Liver Function • Kidney Function
+                    </p>
+
+                    <a href="#appointment">
+                        Book Package →
+                    </a>
+
+                </article>
+
+
+                <article class="package-card popular">
+
+                    <span>
+                        MOST CHOSEN
+                    </span>
+
+                    <h3>
+                        Wellvia Complete
+                    </h3>
+
+                    <strong>
+                        ₹2,999
+                    </strong>
+
+                    <p>
+                        Full Blood Profile • Diabetes Screening
+                        • Thyroid • Lipids • Liver & Kidney • ECG
+                    </p>
+
+                    <a href="#appointment">
+                        Book Package →
+                    </a>
+
+                </article>
+
+
+                <article class="package-card">
+
+                    <span>
+                        FOCUSED
+                    </span>
+
+                    <h3>
+                        Wellvia Heart
+                    </h3>
+
+                    <strong>
+                        ₹1,999
+                    </strong>
+
+                    <p>
+                        ECG • Lipid Profile • Blood Sugar
+                        • BP Assessment • Cardiac Consultation
+                    </p>
+
+                    <a href="#appointment">
+                        Book Package →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             WHY WELLVIA
+        ========================== -->
+
+        <section class="section why" id="why">
+
+            <div class="why-content">
+
+                <div class="section-number">
+                    06 — WHY WELLVIA
+                </div>
+
+                <h2>
+                    A calmer way to
+                    experience
+                    <em>care.</em>
+                </h2>
+
+                <p>
+                    Designed for people who value expertise,
+                    transparency and a healthcare experience
+                    that respects their time.
+                </p>
+
+            </div>
+
+
+            <div class="why-grid">
+
+
+                <div>
+
+                    <span>01</span>
+
+                    <h3>
+                        Expert Care
+                    </h3>
+
+                    <p>
+                        Qualified professionals across
+                        essential specialties.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>02</span>
+
+                    <h3>
+                        Reliable Diagnostics
+                    </h3>
+
+                    <p>
+                        Modern testing with clear,
+                        accessible reports.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>03</span>
+
+                    <h3>
+                        Patient First
+                    </h3>
+
+                    <p>
+                        Simple communication, thoughtful
+                        service and continuity.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>04</span>
+
+                    <h3>
+                        One Connected Journey
+                    </h3>
+
+                    <p>
+                        Consult, test, review and follow-up
+                        in one place.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TESTIMONIAL
+        ========================== -->
+
+        <section class="section testimonial">
+
+            <div class="section-number">
+                07 — PATIENT STORIES
+            </div>
+
+
+            <div class="testimonial-box">
+
+                <div class="quote">
+                    “
+                </div>
+
+
+                <blockquote>
+
+                    Good healthcare should not feel intimidating.
+                    Wellvia made every step — from booking to
+                    understanding the report — feel clear and comfortable.
+
+                </blockquote>
+
+
+                <p>
+                    — Meera T.
+                    <span>Wellvia Patient</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FACILITIES
+        ========================== -->
+
+        <section class="section facilities">
+
+            <div class="facility-image">
+
+                <img src="assets/capsules.jfif"
+                    alt="Healthcare medicine">
+
+                <span>
+                    Care • Diagnostics • Wellness
+                </span>
+
+            </div>
+
+
+            <div class="facility-content">
+
+                <div class="section-number">
+                    08 — FACILITIES
+                </div>
+
+
+                <h2>
+                    Built around
+                    <em>your comfort.</em>
+                </h2>
+
+
+                <ul>
+
+                    <li>
+                        Modern consultation rooms
+                    </li>
+
+                    <li>
+                        Pathology & laboratory services
+                    </li>
+
+                    <li>
+                        Diagnostic screening
+                    </li>
+
+                    <li>
+                        Digital appointment support
+                    </li>
+
+                    <li>
+                        Accessible patient areas
+                    </li>
+
+                    <li>
+                        24/7 emergency support
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             HOW IT WORKS
+        ========================== -->
+
+        <section class="section how">
+
+            <div class="section-number">
+                09 — HOW IT WORKS
+            </div>
+
+
+            <h2>
+                Five simple steps to
+                <em>better care.</em>
+            </h2>
+
+
+            <div class="steps">
+
+
+                <div>
+
+                    <span>01</span>
+
+                    <h3>
+                        Book
+                    </h3>
+
+                    <p>
+                        Choose a doctor, service
+                        or health package.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>02</span>
+
+                    <h3>
+                        Visit
+                    </h3>
+
+                    <p>
+                        Meet your healthcare professional
+                        at your scheduled time.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>03</span>
+
+                    <h3>
+                        Diagnose
+                    </h3>
+
+                    <p>
+                        Complete consultation and
+                        recommended tests.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>04</span>
+
+                    <h3>
+                        Treat
+                    </h3>
+
+                    <p>
+                        Receive a clear,
+                        personalized care plan.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>05</span>
+
+                    <h3>
+                        Recover
+                    </h3>
+
+                    <p>
+                        Continue your journey with
+                        follow-up support.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             APPOINTMENT
+        ========================== -->
+
+        <section class="appointment" id="appointment">
+
+            <div class="appointment-glow"></div>
+
+
+            <div class="appointment-content">
+
+                <div class="section-number">
+                    10 — APPOINTMENT
+                </div>
+
+
+                <h2>
+                    Your health
+                    shouldn't
+                    <em>wait.</em>
+                </h2>
+
+
+                <p>
+                    Tell us what you need and we'll help
+                    you take the next step.
+                </p>
+
+            </div>
+
+
+            <form id="appointmentForm">
+
+
+                <div class="form-field">
+
+                    <label>
+                        FULL NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label>
+                        PHONE
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="+91"
+                        required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label>
+                        SERVICE
+                    </label>
+
+                    <select id="service" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option>
+                            General Medicine
+                        </option>
+
+                        <option>
+                            Cardiology
+                        </option>
+
+                        <option>
+                            Orthopedics
+                        </option>
+
+                        <option>
+                            Women's Health
+                        </option>
+
+                        <option>
+                            Pediatrics
+                        </option>
+
+                        <option>
+                            Pathology & Diagnostics
+                        </option>
+
+                        <option>
+                            Health Package
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label>
+                        PREFERRED DATE
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-button submit-button">
+
+                    Book an Appointment
+                    <span>↗</span>
+
+                </button>
+
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact" id="contact">
+
+            <div>
+
+                <div class="section-number">
+                    11 — CONTACT & LOCATION
+                </div>
+
+
+                <h2>
+                    Find us in
+                    <em>Tawang.</em>
+                </h2>
+
+
+                <p>
+                    Wellvia, Main Market Road,
+                    Tawang, Arunachal Pradesh, India.
+                </p>
+
+
+                <a
+                    class="underline-link"
+                    href="https://www.google.com/maps/search/?api=1&query=Tawang%2C%20Arunachal%20Pradesh"
+                    target="_blank">
+
+                    Get directions ↗
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-details">
+
+
+                <div>
+
+                    <span>
+                        CALL
+                    </span>
+
+                    <a href="tel:+916001234567">
+                        +91 60012 34567
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        EMAIL
+                    </span>
+
+                    <a href="mailto:care@wellvia.example">
+                        care@wellvia.example
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        HOURS
+                    </span>
+
+                    <p>
+                        Mon–Sat · 8:00 AM–8:00 PM
+                        <br>
+                        Emergency Support · 24/7
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <img src="assets/wellvia-logo.png" alt="Wellvia logo">
+                </div>
+
+                <h2>
+                    Wellvia
+                </h2>
+
+                <p>
+                    The path to better health and wellness.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#doctors">
+                    Doctors
+                </a>
+
+                <a href="#packages">
+                    Packages
+                </a>
+
+                <a href="#appointment">
+                    Appointment
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Wellvia. All rights reserved.
+            </span>
+
+
+            <span>
+                Created by ANKITA BOSE [SuuSri]
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
