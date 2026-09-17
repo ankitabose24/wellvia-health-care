@@ -501,46 +501,58 @@ dateInput.min =
         .split("T")[0];
 
 
-form.addEventListener(
-    "submit",
-    event => {
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-        event.preventDefault();
+    const submitBtn = form.querySelector(".submit-button");
+    const originalText = submitBtn.textContent;
 
+    // 1. Show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+    message.textContent = "";
 
-        const name =
-            document
-                .getElementById("name")
-                .value
-                .trim();
+    // 2. Collect existing field values
+    const payload = {
+        name: document.getElementById("name")?.value.trim() || "",
+        phone: document.getElementById("phone")?.value.trim() || "",
+        service: document.getElementById("service")?.value || "",
+        date: document.getElementById("date")?.value || "",
+    };
 
+    try {
+        // 3. Send to Backend (dynamic endpoint for local testing vs production)
+        const API_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+            ? 'http://localhost:5000/api/contact'
+            : '/api/contact';
 
-        const service =
-            document
-                .getElementById("service")
-                .value;
+        const response = await fetch(API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+        });
 
+        const data = await response.json();
 
-        message.textContent =
-
-            `Thank you, ${name}.
-             Your ${service} request has been received.
-             We’ll contact you to confirm the appointment.`;
-
-
-        form.reset();
-
-
-        /* Restore minimum date */
-
-        dateInput.min =
-            new Date()
-                .toISOString()
-                .split("T")[0];
-
+        if (response.ok && data.success) {
+            message.textContent = `Thank you, ${payload.name}! Your request has been received.`;
+            message.style.color = "green";
+            form.reset();
+            if (dateInput) {
+                dateInput.min = new Date().toISOString().split("T")[0];
+            }
+        } else {
+            message.textContent = data.message || "Failed to send. Please try again.";
+            message.style.color = "red";
+        }
+    } catch (error) {
+        message.textContent = "Network error. Please try again later.";
+        message.style.color = "red";
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
     }
-);
-
+});
 
 
 /* =====================================
