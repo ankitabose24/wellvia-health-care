@@ -523,7 +523,7 @@ form.addEventListener("submit", async (event) => {
     try {
         // 3. Send to Backend (dynamic endpoint for local testing vs production)
         const API_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-            ? 'http://localhost:5000/api/contact'
+            ? 'https://wellvia-health-care.vercel.app/api/contact'
             : '/api/contact';
 
         const response = await fetch(API_URL, {
@@ -541,11 +541,16 @@ form.addEventListener("submit", async (event) => {
             if (dateInput) {
                 dateInput.min = new Date().toISOString().split("T")[0];
             }
+        } else if (response.status === 422 && data.errors && data.errors.length > 0) {
+            const errorDetails = data.errors.map(err => err.message).join(' ');
+            message.textContent = errorDetails;
+            message.style.color = "red";
         } else {
             message.textContent = data.message || "Failed to send. Please try again.";
             message.style.color = "red";
         }
     } catch (error) {
+        console.error("Submission Error:", error);
         message.textContent = "Network error. Please try again later.";
         message.style.color = "red";
     } finally {
